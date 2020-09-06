@@ -52,6 +52,12 @@ namespace RestApiDesign
 
             app.UseAuthorization();
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Demo OpenAPI");
+            });
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
