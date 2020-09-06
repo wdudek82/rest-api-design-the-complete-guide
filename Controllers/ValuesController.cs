@@ -7,7 +7,10 @@ namespace RestApiDesign.Controllers
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        /// <summary>
+        /// Demo API for the REST API Course
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
